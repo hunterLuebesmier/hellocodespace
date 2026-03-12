@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Fraction {
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int numerator, denominator, result;
+
+        System.out.print("Enter Numerator: ");
+        numerator = scanner.nextInt();
+        System.out.print("Enter Denominator: ");
+        denominator = scanner.nextInt();
+        System.out.println();
+
+        // Performs integer division
+        result = numerator / denominator;
+
+        // The image is missing a '+' before 'result'
+        System.out.println(numerator + "/" + denominator + " = " + result);
+    }
+}
